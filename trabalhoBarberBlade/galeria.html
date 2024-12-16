@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria dos trabalhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav-pressionada" aria-label="pressionada" onclick="MenuPressionado()">
+                ☰ 
+            </button>
+        </nav>
+        <div class="aparecer" id="conteudo">
+            <a href="servicos.html"><button>Servicos Ofertados</button></a>
+            <a href="galeria.html"><button>Galeria de Trabalhos</button></a>
+            <a href="equipe.html"><button>Nossa Equipe</button></a>
+            <a href="agendamento.html"><button>Faca seu Agendamento</button></a>
+            <a href="historico.html"><button>Consulte seu Historico</button></a>
+        </div>
+    </header>
+
+    <div id="galeria">
+        <div class="titulogaleria">
+            <h2>Galeria de Imagens</h2>
+        </div>
+        <ul>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220447.png" alt="">
+                <p>Corte e tonalização na<br>nossa cliente Renata</p>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220514.png" alt="">
+                <p>Corte e tonalização na<br>nossa cliente Claudia</p>
+            </li>
+            <li>
+                <img src="imagens/porcocabelo.png" alt="">
+                <p>Corte no nosso cliente<br>Roberto</p>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220047.png" alt="">
+                <p>Corte e tonalização na<br>nossa cliente Lindsay</p>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220117.png" alt="">
+                <p>Corte no nosso cliente<br>Patricia</p>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220259.png" alt="">
+                <p>Tonalização na nossa <br> cliente Pamela</p>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220317.png" alt="">
+                <p>Corte e tonalização no<br>nosso cliente Paulo</p>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220351.png" alt="">
+                <p>Corte e tonalização no<br>nosso cliente Gustavo</p>
+            </li>   
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 220422.png" alt="">
+                <p>Corte e tonalização na<br>nossa cliente Fabiola</p>
+            </li>  
+        </ul>
+    </div>
+
+    <script>
+        function MenuPressionado() 
+        {
+          const menu = document.getElementById('conteudo');
+          menu.classList.toggle('visivel');
+        }
+    </script>
+</body>
+</html>

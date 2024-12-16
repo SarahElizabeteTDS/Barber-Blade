@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav-pressionada" aria-label="pressionada" onclick="MenuPressionado()">
+                ☰ 
+            </button>
+        </nav>
+        <div class="aparecer" id="conteudo">
+            <a href="servicos.html"><button>Servicos Ofertados</button></a>
+            <a href="galeria.html"><button>Galeria de Trabalhos</button></a>
+            <a href="equipe.html"><button>Nossa Equipe</button></a>
+            <a href="agendamento.html"><button>Faca seu Agendamento</button></a>
+            <a href="historico.html"><button>Consulte seu Historico</button></a>
+        </div>
+    </header>
+
+    <div id="equipe">
+        <div class="tituloequipe">
+            <h2>Nossa Equipe</h2>
+        </div>
+        <ul>
+            <li>
+                <img src="imagens/Alfredo.png" alt="">
+                <h3>Alfredo</h3>
+                <p>Grande amigo Alfredo,<br>trabalha na barbearia<br> desde 1994.</p>
+            </li>
+            <li>
+                <img src="imagens/Anderson.png" alt="">
+                <h3>Anderson</h3>
+                <p>Grande amigo Anderson,<br>trabalha na barbearia<br> desde 1998.</p>
+            </li>
+            <li>
+                <img src="imagens/Ivan.png" alt="">
+                <h3>Ivan</h3>
+                <p>Grande amigo Ivan,<br>trabalha na barbearia<br> desde 2000.</p>
+            </li>
+            <li>
+                <img src="imagens/Julio.png" alt="">
+                <h3>Julio</h3>
+                <p>Grande amigo Julio,<br>trabalha na barbearia<br> desde 2007.</p>
+            </li>
+            <li>
+                <img src="imagens/Robson.png" alt="">
+                <h3>Robson</h3>
+                <p>Grande amigo Robson,<br>trabalha na barbearia<br> desde 2010.</p>
+            </li>
+            <li>
+                <img src="imagens/Tulio.png" alt="">
+                <h3>Tulio</h3>
+                <p>Grande amigo Tulio,<br>trabalha na barbearia<br> desde 2016.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function MenuPressionado() 
+        {
+          const menu = document.getElementById('conteudo');
+          menu.classList.toggle('visivel');
+        }
+    </script>
+</body>
+</html>

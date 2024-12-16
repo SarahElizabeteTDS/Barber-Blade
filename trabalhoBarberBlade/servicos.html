@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicos Disponíveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav-pressionada" aria-label="pressionada" onclick="MenuPressionado()">
+                ☰ 
+            </button>
+        </nav>
+        <div class="aparecer" id="conteudo">
+            <a href="servicos.html"><button>Servicos Ofertados</button></a>
+            <a href="galeria.html"><button>Galeria de Trabalhos</button></a>
+            <a href="equipe.html"><button>Nossa Equipe</button></a>
+            <a href="agendamento.html"><button>Faca seu Agendamento</button></a>
+            <a href="historico.html"><button>Consulte seu Historico</button></a>
+        </div>
+    </header>
+
+    <div id="servicos">
+        <div class="tituloservicos">
+            <h2>Serviços Disponíveis</h2>
+        </div>
+        <ul>
+            <li>
+                <img src="imagens/porcocabelo.png" alt="">
+                <button>Corte de Cabelo</button>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 215443.png" alt="">
+                <button>Corte de Barba</button>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 215633.png" alt="">
+                <button>Sobrancelha</button>
+            </li>
+            <li>
+                <img src="imagens/Captura de tela 2024-12-15 215926.png" alt="">
+                <button>Higienização Facial</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="agendamento">
+        <a href="agendamento.html"> Faca seu Agendamento!</a>
+    </div>
+
+    <script>
+        function MenuPressionado() 
+        {
+          const menu = document.getElementById('conteudo');
+          menu.classList.toggle('visivel');
+        }
+    </script>
+</body>
+</html>

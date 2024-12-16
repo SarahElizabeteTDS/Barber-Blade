@@ -1,0 +1,445 @@
+@media screen and (max-width: 768px) 
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body
+    {
+        background-color: #1C1C1C;
+        display: flex;
+    }
+
+    p, h1, h2, label, a, h3
+    {
+        color: aliceblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    /*splash screen*/
+
+    #splashscreen
+    {
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center; 
+        height: 100vh; 
+        width: 100vh;
+    }
+
+    #splashscreen img
+    {
+        border-radius: 10px;
+    }
+    /*fim splash screen*/
+
+    /*menu sanduiche*/
+    nav 
+    {
+        position: absolute;
+        z-index: 1000;
+        background-color: #f8f9fa;
+        padding: 0.5rem 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width:100%;
+    }
+    
+    .nav-pressionada 
+    {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #333;
+    }
+    
+    .nav-pressionada:focus
+    {
+        outline: none; 
+    }
+    
+    .aparecer 
+    {
+        display: none; 
+        background-color: #f8f9fa;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        position: absolute; 
+        top: 3.5rem; 
+        left: 0;
+        width: 100%; 
+        z-index: 10; 
+    }
+    
+    .aparecer button 
+    {
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 0.5rem 0;
+        text-align: left;
+        font-size: 1rem;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd;
+        color: #D9D9D9;
+    }
+    
+    .aparecer button:last-child 
+    {
+        border-bottom: none; 
+    }
+    
+    .aparecer button:hover 
+    {
+        background-color: #e9ecef; 
+    }
+    
+    .aparecer.visivel 
+    {
+        display: block;
+    }
+
+    /*fim do menu sanduiche*/
+
+    /*página de servicos*/
+
+    
+
+    #servicos 
+    {
+        text-align: center;
+        padding-top: 6vh;
+    }
+    
+    #servicos ul 
+    {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #servicos li
+    {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #servicos li button
+    {
+        height: 50px;
+        width: 200px;
+        background: #f4f4f4;
+        border-radius: 5px;
+    }
+
+    #servicos li img
+    {
+        
+        border-radius: 5px;
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+
+    .tituloservicos
+    {
+        background-color: #ccc;
+    }
+
+    .agendamento
+    {
+        margin-left: 36.2%;
+        display: flex;
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        background: burlywood;
+        border-radius: 5px;
+        margin-top: 80vh;
+        align-items: center;
+        justify-content: center;
+    }
+    /*fim página de servicos*/
+      
+    /*página de login*/
+    form 
+    {
+        float: right;  
+        height: 94.4vh;
+        width: 90vh;
+        padding: 25px 50px 25px 50px;
+    }
+    
+    form .form-group 
+    {
+        margin-top: 15px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    input[type="checklist"]
+    {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-group a
+    {
+        text-decoration: none;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: rgb(219, 182, 111); /*mudar a cor para a cor do site depois*/
+    }
+    
+    /*fim página de login*/
+
+    /*galeria e imagens*/
+    
+    #galeria 
+    {
+        text-align: center;
+        padding-top: 6vh;
+    }
+    
+    #galeria  ul 
+    {
+        gap: 6%;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #galeria  li
+    {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #galeria  li p
+    {
+        padding-bottom: 30px;
+    }
+
+    #galeria  li img
+    {
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+    }
+
+    .titulogaleria
+    {
+        background-color: #ccc;
+        margin-bottom: 10px;
+    }
+
+    /*fim galeria de imagens*/
+
+    /*equipe e imagens*/
+    
+    #equipe 
+    {
+        text-align: center;
+        padding-top: 6vh;
+    }
+    
+    #equipe  ul 
+    {
+        gap: 6%;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #equipe  li
+    {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #equipe  li p
+    {
+        padding-bottom: 30px;
+        margin-top: 5px;
+    }   
+
+    #equipe  li img
+    {
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tituloequipe
+    {
+        background-color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    /*fim equipe e imagens*/
+
+    /*agendamento partes*/
+
+    .titulohistorico
+    {
+        position: absolute;
+        background-color: #ccc;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formularioagenda
+    {
+        margin-top: 50px;
+    }
+
+    /*fim agendamento partes*/
+
+    /*historico*/
+
+    #historico
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px; 
+    }
+
+    .atividade:nth-child(2)
+    {
+        margin-top: 100px;
+    }
+
+    .atividade:nth-child(3)
+    {
+        margin-top: 100px;
+    }
+
+    .atividade
+    {
+        background-color: #352b22;
+        border: 1px solid #2c231a;
+        border-radius: 10px;
+        padding: 15px;
+        width: 300px;
+        justify-content: center;
+        text-align: center;
+        flex: 1 1 calc(50% - 40px); 
+        box-sizing: border-box;
+    }
+
+    .tituloagendamento  
+    {
+        position: absolute;
+        background-color: #ccc;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    /*fim historico*/
+
+    /*CORES *sei que nao é o certo, mas deixei assim* */
+    body 
+    {
+        background-color: #1C1C1C; 
+    }
+    
+    .tituloservicos, .titulogaleria, .tituloequipe, .titulohistorico, .tituloagendamento 
+    {
+        background-color: #A69364;
+        color: #FFFFFF; 
+    }
+    
+    p, h1, h2, h3, label, a 
+    {
+        color: #FFFFFF; 
+    }
+    
+    #servicos li button 
+    {
+        background-color: #A69364; 
+        color: #1C1C1C; 
+        border: 1px solid #D9D9D9; 
+    }
+    
+    #servicos li img 
+    {
+        border: 2px solid #A69364;
+    }
+    
+    .agendamento 
+    {
+        background-color: #A69364; 
+        color: #1C1C1C; 
+    }
+    
+    .atividade 
+    {
+        background-color: #352b22;
+        border: 1px solid #2c231a; 
+        color: #FFFFFF;
+    }
+    
+    nav 
+    {
+        background-color: #1C1C1C;
+    }
+    
+    .nav-pressionada 
+    {
+        color: #FFFFFF;
+    }
+    
+    .aparecer 
+    {
+        background-color: #2C2C2C; 
+    }
+    
+    .aparecer button:hover 
+    {
+        background-color: #A69364; 
+    }
+    
+}
+

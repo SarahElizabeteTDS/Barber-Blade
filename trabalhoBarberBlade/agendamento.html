@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button class="nav-pressionada" aria-label="pressionada" onclick="MenuPressionado()">
+                ☰ 
+            </button>
+        </nav>
+        <div class="aparecer" id="conteudo">
+            <a href="servicos.html"><button>Servicos Ofertados</button></a>
+            <a href="galeria.html"><button>Galeria de Trabalhos</button></a>
+            <a href="equipe.html"><button>Nossa Equipe</button></a>
+            <a href="agendamento.html"><button>Faca seu Agendamento</button></a>
+            <a href="historico.html"><button>Consulte seu Historico</button></a>
+        </div>
+    </header>
+    
+
+    <div class="formularioagenda">
+
+        <div class="tituloagendamento">
+            <h2>Agendamento</h2>
+        </div>
+
+        <form action="">
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+            </div>
+    
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+    
+            <div class="form-group">
+                
+                <input type="checkbox" id="item1"> <label for="item1">Corte de Cabelo</label><br>
+                <input type="checkbox" id="item2"> <label for="item2">Corte de Barba</label><br>
+                <input type="checkbox" id="item3"> <label for="item3">Sobrancelha</label><br>
+                <input type="checkbox" id="item4"> <label for="item4">Higienização Facial</label>
+                
+            </div>
+    
+            <div class="form-group">
+                <a href="deucerto.html">Enviar</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function MenuPressionado() 
+        {
+          const menu = document.getElementById('conteudo');
+          menu.classList.toggle('visivel');
+        }
+    </script>
+</body>
+</html>

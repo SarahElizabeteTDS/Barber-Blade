@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historico de servicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="nav-pressionada" aria-label="pressionada" onclick="MenuPressionado()">
+                ☰ 
+            </button>
+        </nav>
+        <div class="aparecer" id="conteudo">
+            <a href="servicos.html"><button>Servicos Ofertados</button></a>
+            <a href="galeria.html"><button>Galeria de Trabalhos</button></a>
+            <a href="equipe.html"><button>Nossa Equipe</button></a>
+            <a href="agendamento.html"><button>Faca seu Agendamento</button></a>
+            <a href="historico.html"><button>Consulte seu Historico</button></a>
+        </div>
+    </header>
+
+    <div id="historico">
+
+        <div class="titulohistorico">
+            <h2>Historico</h2>
+        </div>
+
+        <div class="atividade">
+            <h2>Corte de Cabelo</h2>
+            <p>Data: 20/11/2024</p>
+            <p>Valor pago: R$30,00</p>
+        </div>
+
+        <div class="atividade">
+            <h2>Sobrancelha</h2>
+            <p>Data: 20/11/2024</p>
+            <p>Valor pago: R$20,00</p>
+        </div>
+
+        <div class="atividade">
+            <h2>Corte de Barba</h2>
+            <p>Data: 24/11/2024</p>
+            <p>Valor pago: R$50,00</p>
+        </div>
+
+        <div class="atividade">
+            <h2>Higienização Facial</h2>
+            <p>Data: 01/12/2024</p>
+            <p>Valor pago: R$40,00</p>
+        </div>
+
+    </div>
+    
+    <script>
+        function MenuPressionado() 
+        {
+          const menu = document.getElementById('conteudo');
+          menu.classList.toggle('visivel');
+        }
+    </script>
+</body>
+</html>
