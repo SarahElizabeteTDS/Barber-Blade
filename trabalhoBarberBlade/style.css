@@ -138,12 +138,20 @@
         flex-direction: column;
     }
 
-    #servicos li button
-    {
+    #servicos li button {
         height: 50px;
         width: 200px;
         background: #f4f4f4;
         border-radius: 5px;
+    }
+
+    .btn {
+        padding: 18px 20px;
+        border-radius: 5px;
+        background-color: #A69364; 
+        color: #1C1C1C; 
+        border: 1px solid #D9D9D9;
+        text-decoration: none;
     }
 
     #servicos li img
@@ -163,7 +171,7 @@
 
     .agendamento
     {
-        margin-left: 36.2%;
+        /* margin-left: 36.2%;
         display: flex;
         position: absolute;
         height: 50px;
@@ -172,7 +180,13 @@
         border-radius: 5px;
         margin-top: 80vh;
         align-items: center;
+        justify-content: center; */
+
+        height: 200px;
+        background-color: transparent !important;
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
     /*fim página de servicos*/
       
@@ -181,7 +195,7 @@
     {
         float: right;  
         height: 94.4vh;
-        width: 90vh;
+        width: 90vw;
         padding: 25px 50px 25px 50px;
     }
     
@@ -396,7 +410,7 @@
         color: #FFFFFF; 
     }
     
-    #servicos li button 
+    #servicos li button, btn 
     {
         background-color: #A69364; 
         color: #1C1C1C; 
@@ -439,7 +453,5 @@
     .aparecer button:hover 
     {
         background-color: #A69364; 
-    }
-    
+    } 
 }
-
